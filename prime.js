@@ -1,17 +1,17 @@
 function CheckPrime(n){
     if(n<=1){
-        return true;
+        return "False";
     }
     for(let i=2;i<=n**0.5;++i){
         if(n%i==0){
-            return false;
+            return "False";
         }
     }
-    return false;
+    return "True";
 }
 let N=13;
 let result=CheckPrime(N);
-if(result){
+if(result=="True"){
     console.log("Not Prime");
 }else{
     console.log("Prime");
